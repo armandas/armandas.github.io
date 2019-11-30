@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="Armandas Jarušauskas">
+
+    <meta name="Description" content="Personal weblog">
+
+    <meta name="robots" content="index, follow">
+
+
+
+    <link rel="shortcut icon" href="../../static/favicon.ico">
+    <!--link rel="stylesheet" type="text/css" href="css/print.css" media="print"-->
+
+
+
+    <style type="text/css" media="screen">@import url('../../static/css/main.css');</style>
+    <title>Armando blogas</title>
+</head>
+<body>
+
+
+
+    <div id="top">
+        <div id="header">
+        <h1><span><a style="color: white;" href="../../" rel="me">Armando blogas</a></span></h1>
+        </div>
+
+        <ul id="menu">
+            <li><a href="/projects/">Projects</a></li>
+          <li><a href="https://github.com/armandas">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/armandas">LinkedIn</a></li>
+            <!--li><a href="{url}">{title}</a></li-->
+        </ul>
+        <hr class="hidden">
+    </div>
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+
+
+
+
+    <div class="post">
+        <h2><a href="../../biokuro-gamyba-nedideliu-mastu.html">Small-scale Biofuel Production</a></h2>
+        <span><small>Įrašyta 2011-05-10, 22:28 | <a href="../../biokuro-gamyba-nedideliu-mastu.html#comments">9 Komentarai</a></small></span>
+        <p><a href="http://www.flickr.com/photos/armandas/5703559432/" title="Biofuel production rig by Armandas, on Flickr"><img src="https://farm6.static.flickr.com/5110/5703559432_01637506b6.jpg" width="324" height="500" alt="Biofuel production rig"></a></p>
+<p>Šiais mokslo metais buvau labai užimtas, tai nusprendžiau nerašyti blogo. Turiu pripažinti, kad sprendimas buvo nelabai geras, bet ką dabar bepadarysi..</p>
+<p>Tai kuo gi buvau užsiėmęs? Ogi mokslais :) Be paskaitų ir laboratorinių, dar dirbau ties magistriniu projektu. Apie tai ir papasakosiu šiame įraše.</p>
+<p>Taigi, projekto pavadinimas ir tema: biokuro gamyba nedideliu mastu. Šį projektą oficialiai pradėjome 2010-ųjų spalį ir prie jo dirbome keturiese - du mechanikos ir du elektronikos inžinieriai. Trumpai tariant, projekto tikslas buvo sukurti aparatą, kuris iš maistinių atliekų gamintų biokurą. Šis projektas buvo vystomas jau trečius metus ir dvi prieš mus dirbusios grupės davė neblogus pamatus mūsų darbui. Daugmaž žinojome kaip vyksta cheminiai procesai, ir ko reikia, kad pagamintumėm tą biokurą. Kita vertus, mūsų grupė nusprendė susikaupti ties paties aparato vystymu ir mažiau dėmesio skirti etanolio gamybai. Šis sprendimas buvo priimtas atsižvelgus į faktą, kad po dviejų metų darbo, vis dar nebuvo solidaus aparato, su kuriuo galima būtų dirbti ir vystyti biokuro gamybos procesą.</p>
+<p>Aš buvau atsakingas už valdymo sistemos kūrimą, o mano kolegė dirbo su elektros sistema. Praeitų metų grupė turėjio šiokią tokią sistemą, bet vos perskaitęs jų raportą supratau, jog galiu padaryti daug geriau. Kaip pavyzdį, galiu paminėti nekokybišką konstrukciją, per brangius komponentus ir neįskaitomą assembly kodą.</p>
+<p>Per daug neišsiplėsdamas pasakysiu, jog visą sistemą sudėjau į vieną spausdintą plokštę, kurią man pagamino <a href="http://www.pcbcart.com">PCB Cart</a>. Žemiau pateikiu plokštės savybes.</p>
+<ul>
+    <li>Valdiklis: PIC18F66K22</li>
+    <li>Maitinimas: Iki 34V įėjimas, 5V ir 3.3V išėjimas</li>
+    <li>Temperatūros matavimas: 5 kanalai K tipo termoporoms</li>
+    <li>Vartotojo sąsaja: tekstinis LCD ekranas ir 4 mygtukai</li>
+    <li>Sąsaja su elektros sistema</li>
+    <li>Laikrodis (real time clock)</li>
+    <li>microSD kortelės lizdas</li>
+</ul>
+<p>Ši plokštė jungiasi su elektros sistema per optoporas ir rėlių bei triodų pagalba valdo motorus, solenoidus bei kaitinimo elementus. Galutinis rezultatas atrodo štai taip:</p>
+<p><a href="http://www.flickr.com/photos/armandas/5703554794/" title="PCB with a scale by Armandas, on Flickr"><img src="https://farm6.static.flickr.com/5149/5703554794_b7051ca797_z.jpg" width="640" height="426" alt="PCB with a scale"></a></p>
+<p>Dizaino failus (Altium ir PDF) ir C kodą galima parsisiųsti iš <a href="https://github.com/armandas/Small-Scale-Biofuel-Production">github</a>'o. Kas turi noro ir moka skaityti angliškai, gali parsisiųsti <a href="../../static/res/small_scale_biofuel_production.pdf">disertaciją</a> ir <a href="../../static/res/ssbp_process_control_unit.pdf">valdymo sistemos dokumentaciją</a>. <a href="http://www.flickr.com/photos/armandas/tags/smallscalebiofuelproduction/">Projekto nuotraukos</a> yra patalpinos Flickr'yje.</p>
+    <p><small>Gairės: <a href="../disertacija/">Disertacija</a>, <a href="index.html">Elektronika</a>, <a href="../pcb-gamyba/">PCB gamyba</a>, <a href="../programavimas/">Programavimas</a>, <a href="../projektas/">Projektas</a>, <a href="../univieras/">Univieras</a></small></p>
+    </div>
+    <hr class="hidden">
+
+
+
+
+    <div class="post">
+        <h2><a href="../../kaip-sutaupiau-tukstanti-litu.html">Kaip sutaupiau tūkstantį litų</a></h2>
+        <span><small>Įrašyta 2011-01-15, 16:59 | <a href="../../kaip-sutaupiau-tukstanti-litu.html#comments">13 Komentarų</a></small></span>
+        <p>Gruodžio mėnesį, dieną prieš išvažiuojant atostogų, ėmė ir sugedo mano laptopas. Diena prieš tai, bežiūrint klipukus buvo pastrigęs, kaip supratau dėl perkaitusio GPU. Tą kartą atsidariau kompą, išvaliau dulkes ir laptopas, šiek tiek atvėsęs, ėmė veikti. Kitą dieną smigo dar kartą, nors šį syki ir nebuvo perkaitęs.</p>
+
+<p>Bandant paleisti kompiuterį iš naujo, monitorius nerodė jokio vaizdo. Tada pasijungiau <a href="../../monitorius-uz-petaka.html">seną išorinį monitorių</a> ir pamačiau štai ką:</p>
+<iframe title="YouTube video player" class="youtube-player" type="text/html" width="480" height="390" src="https://www.youtube.com/embed/bGt57vint7o?rel=0" frameborder="0"></iframe>
+<p>Kažką taisyti laiko jau nebebuvo, laukė kelionė į Lietuvą. Tuo metu, per telefoną, paieškojau informacijos internete. Pasirodo, kad ši problema su NVIDIA čipsetais yra netokia ir reta. Laimingesniems nebuvo pasibaigusi garantija ir motininę plokštę pakeisdavo nemokamai. Mano garantija gi pasibaigė prieš keletą mėnesių.</p>
+<p>Grįžęs namo susiradau Dell serviso kontaktus ir pasiskambinau. Išklausiusi mergaitė pasakė tai, ką ir pats žinojau - garantinis laikotarpis pasibaigęs. Kai paklausiau kiek nori už remontą, liepė parašyti e-laišką su problemos aprašymu ir kompo duomenim. Gavus atsakymą atšoko visi norai kažką remontuoti - pagrindinės plokštės keitimas kainuotų 1017 Lt (su PVM). Laptopas taip ir liko sėdėti lagamine. Iki šios savaitės, tai yra.</p>
+<p>Grįžęs į Angliją, nusprendžiau imtis darbų. Pagal serviso instrukciją išardžiau visą kompą ir išėmiau pagrindinę plokštę. Tada išsitraukiau savo karšto oro pompą ir pradėjau kaitinti GPU. Kai jau atrodė, kad gana, palengva atitraukdamas pompą leidau plokštei atvėsti. Pabandymui prijungiau maitinimą, sudėjau RAM'ą ir ką jūs manot? Kompas veikia! Štai vaizdas iš proceso:</p>
+<p><a href="http://picasaweb.google.com/lh/photo/coUuf8O_fpbwcOAOppJ18A?feat=embedwebsite"><img src="https://lh3.ggpht.com/_is7PcgDfyqQ/TTHSS1ZW6uI/AAAAAAAABk0/W0n0Pmr9N5I/s640/DSC_0003.JPG" height="426" width="640" /></a></p>
+<p>Na istorija gavosi tokia sutrumpina ir neperduoda visos panikos ir suėstų nervų, bet toks iš manęs rašytojas :D</p>
+    <p><small>Gairės: <a href="../diy/">DIY</a>, <a href="index.html">Elektronika</a>, <a href="../gyvenimas/">Gyvenimas</a>, <a href="../laptopas/">Laptopas</a>, <a href="../lietuva/">Lietuva</a></small></p>
+    </div>
+    <hr class="hidden">
+
+
+
+
+    <div class="post">
+        <h2><a href="../../mikroelektronika-lietuvoje.html">Mikroelektronika Lietuvoje</a></h2>
+        <span><small>Įrašyta 2010-10-08, 20:56 | <a href="../../mikroelektronika-lietuvoje.html#comments">6 Komentarai</a></small></span>
+        <p><a href="http://drpage.bartuva.lt/news.php?extend.53"><img src="../../static/res/2010/10/wafer.jpg" alt="Silicio diskas"></a>
+<br>Nuotraukos autorius: Dovydas Rušinskas</p>
+<p>O pasirodo Lietuvoje buvo gaminami puslaidininkiai. Kai kam gal ir ne paslaptis, bet aš apie tai sužinojau tik šiandien, benaršydamas po <a href="http://drpage.bartuva.lt/news.php">Dovydo puslapį</a>. Beieškodamas daugiau informacijos, radau <a href="http://ausis.gf.vu.lt/mg/nr/98/4/04mikroe.html">šį "Mokslo ir gyvenimo" straipsnį</a>, kuriame aprašoma Lietuvos mikroelektronikos pramonės istorija. Verta paskaityti.</p>
+    <p><small>Gairės: <a href="index.html">Elektronika</a>, <a href="../ic/">IC</a>, <a href="../lietuva/">Lietuva</a></small></p>
+    </div>
+    <hr class="hidden">
+
+
+
+
+    <div class="post">
+        <h2><a href="../../pic-prototipavimo-plokstele.html">PIC prototipavimo plokštelė</a></h2>
+        <span><small>Įrašyta 2010-08-02, 14:23 | <a href="../../pic-prototipavimo-plokstele.html#comments">9 Komentarai</a></small></span>
+        <p><a href="http://picasaweb.google.com/lh/photo/9mj8qrYEJs6wfesOlkQQTg?feat=embedwebsite"><img src="https://lh6.ggpht.com/_is7PcgDfyqQ/TLrBSrVVHvI/AAAAAAAABgM/jTnpW8utikI/s400/DSC_0005.JPG" height="265" width="400" alt="PIC prototyping board"></a></p>
+<p>Tęsdamas žaidimus su <a href="../pcb-gamyba/">PCB gaminimu</a>, pasidariau nedidelę prototipavimo plokštę su PIC18F4550 mikrokontroleriu. Navarotų (pvz. įtampos reguliavimas) nėra, komponentus sudėjau, kad veiktų ir būtų galima programuoti. Pridėjau USB lizdą, kad sumetus bootloaderį, būtų galima programuoti per USB.</p>
+<p>Plokštelę stengiausi daryti kuo mažesnę, tai teko šiek tiek pavargti vedžiojant takelius (vieno sluoksnio PCB). Pati plokštė gavosi neblogai, išskyrus pora vietų kur pagrybavau su matmenimis. Po to prigręžiojau kreivų skylių ir nelindo header'iai. Paskui užsimylėjau viską lituodamas - matyt teks pereiti prie litavimo pastos ir keptuvės arba <a href="http://www.xoom.lt/2010/04/06/mikroschemu-islitavimas/">lygintuvo</a> :D</p>
+<p>Į pabaigą jau nesitikėjau, kad kas nors veiks, bet visgi pavyko:</p>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/gRn0jy3gLeE&amp;hl=en_GB&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/gRn0jy3gLeE&amp;hl=en_GB&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+    <p><small>Gairės: <a href="index.html">Elektronika</a>, <a href="../pcb-gamyba/">PCB gamyba</a>, <a href="../pic/">PIC</a>, <a href="../video/">Video</a></small></p>
+    </div>
+    <hr class="hidden">
+
+
+
+
+    <div class="post">
+        <h2><a href="../../rigol-ds1052e-osciloskopas.html">Rigol DS1052E</a></h2>
+        <span><small>Įrašyta 2010-03-20, 12:48 | <a href="../../rigol-ds1052e-osciloskopas.html#comments">19 Komentarų</a></small></span>
+        <p><a href="http://picasaweb.google.com/lh/photo/aCwYwh34lSisFb3w0axcng?feat=embedwebsite"><img src="https://lh6.ggpht.com/_is7PcgDfyqQ/S6S8SGnZMfI/AAAAAAAABTE/5oK0aSd02QU/s400/DSC_0036.JPG" alt="Rigol DS1052E"></a></p>
+<p>Šios savaitės pradžioje atkeliavo mano išsvajotasis osciloskopas - Rigol DS1052E. Apie osciloskopo pirkimą galvojau jau gan seniai, bet vis pritrūkdavau lėšų. Galiausiai pasipildžius biudžetui, užsisakiau šį prietaisą iš <a href="http://www.dealextreme.com/details.dx/sku.30573">DealExtreme</a>.</p>
+<p>Rigol skopai yra tikrų tikriausias gėris. Už tokią kainą rasti kažką geriau turbūt neįmanoma. Juolab, kad neseniai <a href="http://www.eevblog.com/forum/index.php?topic=30.msg2794#msg2794">išaiškėjo</a>, kad galima lengvai konvertuoti šį 50MHz modelį į 100MHz. Žemiau matosi įrodymas. Jei žinot, kas yra frequency response - suprasit.</p>
+<p><a href="http://www.eevblog.com/forum/index.php?topic=30.msg2869#msg2869"><img src="../../static/res/2010/03/rigol_mod.png" alt="rigol mod frequency response"></a><br>
+Tas pats 100MHz signalas prieš ir po modifikacijos.</p>
+<p>P.S. jei dar nesekat <a href="http://www.eevblog.com/">EEVBlog</a> - labai rekomenduoju :)</p>
+    <p><small>Gairės: <a href="index.html">Elektronika</a>, <a href="../osciloskopas/">Osciloskopas</a>, <a href="../wishlist/">Wishlist</a></small></p>
+    </div>
+    <hr class="hidden">
+
+
+
+            <div id="comments">
+
+
+
+                    <!--p id="comments_disabled">Comments are disabled on this post.</p-->
+
+            </div>
+
+
+                <p id="pagination">
+
+
+                    <a href="previous2.html" id="next_page">Senesni įrašai »</a>
+
+                </p>
+                <hr class="hidden">
+
+
+
+
+
+            </div>
+
+            <div id="sidebar">
+
+
+            <h3>Paieška</h3>
+            <form action="http://www.google.com/cse" id="cse-search-box">
+                <div>
+                    <input type="hidden" name="cx" value="015537480257906970513:vlorie8a_eo">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input type="text" name="q">
+                    <input type="submit" name="sa" value="Paieška">
+                </div>
+            </form>
+
+
+            <!--h3>Draugai</h3>
+                <ul>
+
+                </ul-->
+
+            <h3>Rekomenduoju</h3>
+                <ul>
+
+                    <li><a href="../../blogai-elektronikos-tematika.html">Blogai elektronikos tema</a></li>
+                </ul>
+
+
+
+            <h3>Gairės</h3>
+                <p style="text-align: center">
+
+                    <a href="../3d/" rel="tag" style="font-size: 11px" title="3D (1)">3d</a>
+
+                    <a href="../5kapp/" rel="tag" style="font-size: 11px" title="5Kapp (1)">5kapp</a>
+
+                    <a href="../android/" rel="tag" style="font-size: 12px" title="Android (3)">android</a>
+
+                    <a href="../apple/" rel="tag" style="font-size: 12px" title="Apple (2)">apple</a>
+
+                    <a href="../barbecue/" rel="tag" style="font-size: 11px" title="Barbecue (1)">barbecue</a>
+
+                    <a href="../barcamp/" rel="tag" style="font-size: 15px" title="BarCamp (7)">barcamp</a>
+
+                    <a href="../blog/" rel="tag" style="font-size: 15px" title="Blog (7)">blog</a>
+
+                    <a href="../bonfire/" rel="tag" style="font-size: 11px" title="Bonfire (1)">bonfire</a>
+
+                    <a href="../brainstorming/" rel="tag" style="font-size: 11px" title="Brainstorming (1)">brainstorming</a>
+
+                    <a href="../breaks/" rel="tag" style="font-size: 12px" title="Breaks (2)">breaks</a>
+
+                    <a href="../cs/" rel="tag" style="font-size: 11px" title="Coutre-Strike (1)">cs</a>
+
+                    <a href="../darbas/" rel="tag" style="font-size: 12px" title="Darbas (3)">darbas</a>
+
+                    <a href="../debugging/" rel="tag" style="font-size: 12px" title="Debugging (2)">debugging</a>
+
+                    <a href="../diy/" rel="tag" style="font-size: 16px" title="DIY (8)">diy</a>
+
+                    <a href="../disertacija/" rel="tag" style="font-size: 12px" title="Disertacija (2)">disertacija</a>
+
+                    <a href="../django/" rel="tag" style="font-size: 11px" title="Django (1)">django</a>
+
+                    <a href="../dnb/" rel="tag" style="font-size: 12px" title="Dum and Bass (2)">dnb</a>
+
+                    <a href="../dumai/" rel="tag" style="font-size: 12px" title="Dūmai (2)">dumai</a>
+
+                    <a href="../ebay/" rel="tag" style="font-size: 11px" title="eBay (1)">ebay</a>
+
+                    <a href="../egzai/" rel="tag" style="font-size: 12px" title="Egzai (3)">egzai</a>
+
+                    <a href="index.html" rel="tag" style="font-size: 24px" title="Elektronika (19)">elektronika</a>
+
+                    <a href="../fma/" rel="tag" style="font-size: 11px" title="FMA (1)">fma</a>
+
+                    <a href="../foto/" rel="tag" style="font-size: 12px" title="Foto (3)">foto</a>
+
+                    <a href="../fotografija/" rel="tag" style="font-size: 15px" title="Fotografija (7)">fotografija</a>
+
+                    <a href="../fpga/" rel="tag" style="font-size: 15px" title="FPGA (6)">fpga</a>
+
+                    <a href="../geek/" rel="tag" style="font-size: 24px" title="Geek (19)">geek</a>
+
+                    <a href="../gyvenimas/" rel="tag" style="font-size: 21px" title="Gyvenimas (15)">gyvenimas</a>
+
+                    <a href="../ic/" rel="tag" style="font-size: 12px" title="IC (2)">ic</a>
+
+                    <a href="../internetas/" rel="tag" style="font-size: 15px" title="Internetas (6)">internetas</a>
+
+                    <a href="../java/" rel="tag" style="font-size: 11px" title="Java (1)">java</a>
+
+                    <a href="../kindle/" rel="tag" style="font-size: 11px" title="Kindle (1)">kindle</a>
+
+                    <a href="../laptopas/" rel="tag" style="font-size: 12px" title="Laptopas (3)">laptopas</a>
+
+                    <a href="../lietuva/" rel="tag" style="font-size: 12px" title="Lietuva (2)">lietuva</a>
+
+                    <a href="../magnetai/" rel="tag" style="font-size: 11px" title="Magnetai (1)">magnetai</a>
+
+                    <a href="../menas/" rel="tag" style="font-size: 12px" title="Menas (2)">menas</a>
+
+                    <a href="../miegas/" rel="tag" style="font-size: 12px" title="Miegas (2)">miegas</a>
+
+                    <a href="../monitorius/" rel="tag" style="font-size: 11px" title="Monitorius (1)">monitorius</a>
+
+                    <a href="../muzika/" rel="tag" style="font-size: 15px" title="Muzika (6)">muzika</a>
+
+                    <a href="../osciloskopas/" rel="tag" style="font-size: 11px" title="Osciloskopas (1)">osciloskopas</a>
+
+                    <a href="../pastebejimai/" rel="tag" style="font-size: 18px" title="Pastebėjimai (11)">pastebejimai</a>
+
+                    <a href="../pcb-gamyba/" rel="tag" style="font-size: 13px" title="PCB gamyba (4)">pcb-gamyba</a>
+
+                    <a href="../pic/" rel="tag" style="font-size: 12px" title="PIC (2)">pic</a>
+
+                    <a href="../python/" rel="tag" style="font-size: 12px" title="Python (3)">python</a>
+
+                    <a href="../programavimas/" rel="tag" style="font-size: 18px" title="Programavimas (10)">programavimas</a>
+
+                    <a href="../projektas/" rel="tag" style="font-size: 15px" title="Projektas (6)">projektas</a>
+
+                    <a href="../protestas/" rel="tag" style="font-size: 11px" title="Protestas (1)">protestas</a>
+
+                    <a href="../rap/" rel="tag" style="font-size: 12px" title="RAP (2)">rap</a>
+
+                    <a href="../rastas/" rel="tag" style="font-size: 11px" title="Raštas (1)">rastas</a>
+
+                    <a href="../rinkimai/" rel="tag" style="font-size: 11px" title="Rinkimai (1)">rinkimai</a>
+
+                    <a href="../robotas/" rel="tag" style="font-size: 11px" title="Robotas (1)">robotas</a>
+
+                    <a href="../ruby/" rel="tag" style="font-size: 11px" title="Ruby (1)">ruby</a>
+
+                    <a href="../symbian/" rel="tag" style="font-size: 11px" title="Symbian (1)">symbian</a>
+
+                    <a href="../sviestas/" rel="tag" style="font-size: 11px" title="Sviestas (1)">sviestas</a>
+
+                    <a href="../telefonas/" rel="tag" style="font-size: 14px" title="Telefonas (5)">telefonas</a>
+
+                    <a href="../ubuntu/" rel="tag" style="font-size: 12px" title="Ubuntu (3)">ubuntu</a>
+
+                    <a href="../uk/" rel="tag" style="font-size: 18px" title="UK (11)">uk</a>
+
+                    <a href="../univieras/" rel="tag" style="font-size: 25px" title="Univieras (20)">univieras</a>
+
+                    <a href="../vhdl/" rel="tag" style="font-size: 12px" title="VHDL (3)">vhdl</a>
+
+                    <a href="../video/" rel="tag" style="font-size: 14px" title="Video (5)">video</a>
+
+                    <a href="../wishlist/" rel="tag" style="font-size: 17px" title="Wishlist (9)">wishlist</a>
+
+                    <a href="../zaidimai/" rel="tag" style="font-size: 12px" title="Žaidimai (2)">zaidimai</a>
+
+                    <a href="../zenit/" rel="tag" style="font-size: 11px" title="Zenit (1)">zenit</a>
+
+                    <a href="../ziema/" rel="tag" style="font-size: 12px" title="Žiema (3)">ziema</a>
+
+                </p>
+
+
+
+            <h3>Archyvai</h3>
+                <ul>
+
+                    <li><a href="../../archive/2011/5/">2011 Gegužė (1)</a></li>
+
+                    <li><a href="../../archive/2011/3/">2011 Kovas (1)</a></li>
+
+                    <li><a href="../../archive/2011/1/">2011 Sausis (1)</a></li>
+
+                    <li><a href="../../archive/2010/10/">2010 Spalis (2)</a></li>
+
+                    <li><a href="../../archive/2010/8/">2010 Rugpjūtis (1)</a></li>
+
+                    <li><a href="../../archive/2010/6/">2010 Birželis (2)</a></li>
+
+                    <li><a href="../../archive/2010/5/">2010 Gegužė (1)</a></li>
+
+                    <li><a href="../../archive/2010/4/">2010 Balandis (1)</a></li>
+
+                    <li><a href="../../archive/2010/3/">2010 Kovas (2)</a></li>
+
+                    <li><a href="../../archive/2010/2/">2010 Vasaris (1)</a></li>
+
+                    <li><a href="../../archive/2010/1/">2010 Sausis (2)</a></li>
+
+                    <li><a href="../../archive/2009/11/">2009 Lapkritis (1)</a></li>
+
+                    <li><a href="../../archive/2009/10/">2009 Spalis (1)</a></li>
+
+                    <li><a href="../../archive/2009/9/">2009 Rugsėjis (4)</a></li>
+
+                    <li><a href="../../archive/2009/8/">2009 Rugpjūtis (3)</a></li>
+
+                    <li><a href="../../archive/2009/7/">2009 Liepa (3)</a></li>
+
+                    <li><a href="../../archive/2009/6/">2009 Birželis (1)</a></li>
+
+                    <li><a href="../../archive/2009/5/">2009 Gegužė (5)</a></li>
+
+                    <li><a href="../../archive/2009/3/">2009 Kovas (2)</a></li>
+
+                    <li><a href="../../archive/2009/2/">2009 Vasaris (3)</a></li>
+
+                    <li><a href="../../archive/2009/1/">2009 Sausis (4)</a></li>
+
+                    <li><a href="../../archive/2008/12/">2008 Gruodis (1)</a></li>
+
+                    <li><a href="../../archive/2008/11/">2008 Lapkritis (2)</a></li>
+
+                    <li><a href="../../archive/2008/10/">2008 Spalis (6)</a></li>
+
+                    <li><a href="../../archive/2008/9/">2008 Rugsėjis (2)</a></li>
+
+                    <li><a href="../../archive/2008/8/">2008 Rugpjūtis (1)</a></li>
+
+                    <li><a href="../../archive/2008/7/">2008 Liepa (1)</a></li>
+
+                    <li><a href="../../archive/2008/6/">2008 Birželis (3)</a></li>
+
+                    <li><a href="../../archive/2008/5/">2008 Gegužė (3)</a></li>
+
+                    <li><a href="../../archive/2008/3/">2008 Kovas (5)</a></li>
+
+                    <li><a href="../../archive/2008/2/">2008 Vasaris (3)</a></li>
+
+                    <li><a href="../../archive/2008/1/">2008 Sausis (4)</a></li>
+
+                    <li><a href="../../archive/2007/12/">2007 Gruodis (6)</a></li>
+
+                    <li><a href="../../archive/2007/11/">2007 Lapkritis (5)</a></li>
+
+                    <li><a href="../../archive/2007/10/">2007 Spalis (5)</a></li>
+
+                    <li><a href="../../archive/2007/9/">2007 Rugsėjis (5)</a></li>
+
+                    <li><a href="../../archive/2007/8/">2007 Rugpjūtis (3)</a></li>
+
+                    <li><a href="../../archive/2007/7/">2007 Liepa (8)</a></li>
+
+                    <li><a href="../../archive/2007/6/">2007 Birželis (4)</a></li>
+
+                    <li><a href="../../archive/2007/5/">2007 Gegužė (4)</a></li>
+
+                </ul>
+
+
+
+
+                <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&lang=lt"></script>
+
+            </div>
+        </div>
+    </div>
+    <hr class="hidden">
+
+
+<div id="footer">
+    <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">(cc) Armandas Jarušauskas 2007-2010</a></p>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5022802-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
